@@ -7,10 +7,10 @@ import (
 func Vvod() types.Card {
 	card := types.Card{
 		ID:       1,
-		PAN:      "5050 xxxx xxxx 6969",
+		PAN:      "5050 xxxx xxxx 9999",
 		Currency: "TJS",
 		Color:    "Gold",
-		Name:     "Boozoorg",
+		Name:     "Amirbek",
 		Balance:  20000,
 		Active:   false,
 	}
@@ -19,7 +19,7 @@ func Vvod() types.Card {
 
 func Withdraw(card *types.Card) types.Card {
 	if !card.Active {
-		card.Active = true
+		return *card
 	} else {
 		card.Active = false
 	}

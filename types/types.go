@@ -15,7 +15,6 @@ const (
 type Color string
 
 const (
-	Shit   Color = "SHIT"
 	Silver Color = "Silver"
 	Gold   Color = "Gold"
 )
